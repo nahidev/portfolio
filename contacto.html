@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header id="header">
+        <div id="headerInfo">
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-dark-mode">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <h1 class="logo site-title" data-shrink-original-size="72" style="letter-spacing: 0.138889em;">
+                    <span class="placed-site-title">Nahikari Zubeldia</span>
+            </h1>
+            <p class="site-tagline" data-shrink-original-size="14" style="letter-spacing: 0.428571em;">Desarrolladora web en Oviedo</p>
+            <div id="navBlock" role="navigation">
+                <nav class="main-nav" data-content-field="navigation">
+                    <ul>
+                        <li class="page-collection active-link"><a href="index.html">Inicio</a></li>
+                        <li class="page-collection"><a href="about.html">Sobre Mí</a></li>
+                        <li class="page-collection active-link"><a href="proyectos.html">Proyectos</a></li>
+                        <li class="page-collection"><a href="contacto.html">Contáctame</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <p>¿Quieres hablar conmigo? ¡Ponte en contacto!</p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>  
+</section>
+    </main>
+    <footer>
+        <p>&copy; 2024. Nahidev.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

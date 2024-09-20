@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header id="header">
+        <div id="headerInfo">
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-dark-mode">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <h1 class="logo site-title" data-shrink-original-size="72" style="letter-spacing: 0.138889em;">
+                    <span class="placed-site-title">Nahikari Zubeldia</span>
+            </h1>
+            <p class="site-tagline" data-shrink-original-size="14" style="letter-spacing: 0.428571em;">Desarrolladora web en Oviedo</p>
+                <div id="navBlock" role="navigation">
+                <nav class="main-nav" data-content-field="navigation">
+                    <ul>
+                        <li class="page-collection active-link"><a href="index.html">Inicio</a></li>
+                        <li class="page-collection"><a href="about.html">Sobre Mí</a></li>
+                        <li class="page-collection active-link"><a href="proyectos.html">Proyectos</a></li>
+                        <li class="page-collection"><a href="contacto.html">Contáctame</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="scroll-indicator">
+        <span data-section="1" class="dot active"></span>
+        <span data-section="2" class="dot"></span>
+        <span data-section="3" class="dot"></span>
+        <span data-section="4" class="dot"></span>
+    </div>
+    <main>
+        <section id="projects" class="projects-section">            
+            <section class="project-section" id="memory-game">
+                <div class="project-content memory-game">
+                    <h1>Memory Game</h1>
+                    <div class="square-container">
+                        <p>Este proyecto es un juego clásico de memoria en los lenguajes HTML, CSS y JavaScript.<br><br> Las cartas se giran al hacer clic y permanecen bloqueadas si coinciden. Se completa el juego al encontrar todos los pares de cartas.</p>
+                    </div>
+                        <a href="https://github.com/nahidev/memory-game" target="_blank" class="project-link">Ver en GitHub</a>
+                </div>
+            </section>
+            <section class="project-section" id="weather-watch">
+                <div class="project-content weather-watch">
+                    <h1>Weather Watch</h1>
+                    <div class="square-container">
+                        <p>Es una aplicacion en los lenguajes PHP, HTML y CSS.<br><br> Proporciona información metereológica en tiempo real para cualquier ubicación. Utiliza la API de OpenWeather para obtener los datos.</p>
+                    </div>
+                    <a href="https://github.com/nahidev/weather-watch" target="_blank" class="project-link">Ver en GitHub</a>
+                </div>
+            </section>
+            <section class="project-section" id="snake-game">
+                <div class="project-content snake-game">
+                    <h1>Snake Game</h1>
+                    <div class="square-container">
+                        <p>Este proyecto es un juego clásico de Snake en el lenguaje Java.<br><br> Incrementa la velocidad a medida que aumentan las manzanas atrapadas, con manzanas doradas ocasionales y niveles de dificultad.</p>
+                    </div>
+                    <a href="https://github.com/nahidev/snake-game" target="_blank" class="project-link">Ver en GitHub</a>
+                </div>
+            </section>
+            <section class="project-section" id="quiz">
+                <div class="project-content quiz">
+                    <h1>Geography <br>and<br> Science Quiz</h1>
+                    <div class="square-container">
+                        <p>Este proyecto es un cuestionario desarrollado utilizando los lenguajes HTML, CSS y JavaScript. <br><br>Ofrece la posibilidad de elegir preguntas de geografía o ciencia, con cuatro respuestas posibles. Al seleccionar una respuesta, el sistema indica si la respuesta es correcta o incorrecta. Al final, muestra la puntuación. Permite reiniciar el cuestionario randomizando las preguntas.</p>
+                    </div>
+                    <a href="https://github.com/nahidev/geography-quiz" target="_blank" class="project-link">Ver en GitHub</a>
+                </div>
+            </section>
+        </section> 
+    </main>
+    <footer>
+        <p>&copy; 2024. Nahidev.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
