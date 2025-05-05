@@ -1,9 +1,8 @@
-body {
+html, body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #fff;
 }
 main {
     max-width: 900px;
@@ -127,6 +126,10 @@ main {
     align-items: center; 
     padding: 20px; 
 }
+.project-item:last-child {
+    grid-column: span 2; 
+    justify-self: center; 
+}
 .project-item {
     position: relative;
     overflow: hidden;
@@ -174,6 +177,9 @@ main {
 }
 .scroll-indicator .dot:hover {
     background-color: #555;
+}
+.project-content.bookshelf{
+    background-image: url('../imgs/Bookshelf-background.jpg');
 }
 .project-content.memory-game {
     background-image: url('../imgs/Memory-background.webp');
@@ -286,6 +292,12 @@ main {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+.project-view{
+    display: flex;
+    flex-direction: column; /* esto apila los elementos verticalmente */
+    gap: 10px; /* espacio entre los enlaces, opcional */
+    align-items: flex-start; /* alinea a la izquierda */
 }
 footer {
     padding: 20px 0;
