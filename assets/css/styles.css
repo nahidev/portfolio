@@ -295,9 +295,9 @@ main {
 }
 .project-view{
     display: flex;
-    flex-direction: column; /* esto apila los elementos verticalmente */
-    gap: 10px; /* espacio entre los enlaces, opcional */
-    align-items: flex-start; /* alinea a la izquierda */
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: flex-start; 
 }
 footer {
     padding: 20px 0;
@@ -445,4 +445,69 @@ body.dark-mode .main-nav ul li a {
     object-fit: contain; 
     margin-top: 10px;
     margin-bottom: 10px;
+}
+/*MEDIA*/
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .site-tagline {
+        font-size: 12px;
+    }
+
+    .scroll-indicator {
+        right: 20px;
+    }
+
+    .project-section {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .project-content {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .square-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .square-container p {
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .project-view {
+        width: 100%;
+        align-items: center;
+    }
+
+    .project-link {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-section, .profile-content {
+        flex-direction: column;
+    }
+
+    .profile-image, .profile-text {
+        margin: 0;
+        width: 100%;
+    }
+
+    .profile-text {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
 }
